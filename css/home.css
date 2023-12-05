@@ -1,0 +1,92 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;  
+} 
+body{
+    height: auto; 
+    
+} 
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;   
+    margin: 0;
+    background-image: linear-gradient(rgba(50, 8, 236, 0.3), rgba(50, 8, 236, 0.3));
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.first h1{
+   color: black; 
+   font-weight: bolder; 
+    letter-spacing: 1rem;
+} 
+.first p {
+    color: black;
+    font-weight: 500; 
+        
+}
+.second{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    
+} 
+.second a{
+    color: white; 
+    padding: 1rem; 
+    font-weight: bolder; 
+    border: 1px solid white;
+} 
+
+.second a:link,
+.second a:link:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border: 2px solid;
+    border-radius: 1000px;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+}
+.second a:link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(248, 246, 246, 0.5); 
+    color: white;
+}
+
+.second a:link:active {
+    transform: translateY(-3px); 
+}
+.second a:link::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    transition: all .3s;
+}
+
+.second a:link:hover::after {
+    background-color: white;
+    transform: scaleX(1.4) scaleY(1.5);
+    opacity: 0;
+}
+
+
+
